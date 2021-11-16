@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/materialize.css" />
+    <script src="libs/rxjs.js" defer></script>
+    <script src="libs/script.js" defer></script>
+    <script src="assets/js/materialize.js" defer></script>
+    <title>JS</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      margin-top: 20%;
+      background: url("assets/img/bg.jpg");
+    }
+    input::placeholder,
+    label.icon_prefix {
+      color: black !important;
+    }
+  </style>
+  <body>
+    <div class="row">
+      <form class="col s6">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix"></i>
+            <input
+              id="icon_prefix"
+              type="text"
+              class="validate"
+              placeholder="Type country name"
+              style="width: 300px"
+            />
+            <label for="icon_prefix">Country</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ul class="collection"></ul>
+  </body>
+</html>
